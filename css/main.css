@@ -479,7 +479,7 @@ p4 {
   font-size: 20px;
   text-align: center;
   word-wrap: normal;
-  border-radius: 15px 50px 15px 50px;
+  /*border-radius: 15px 50px 15px 50px;*/
 }
 
 .card__front:hover .add {
