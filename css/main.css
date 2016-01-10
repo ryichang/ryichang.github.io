@@ -249,8 +249,10 @@ header.navbar {
 
 .banner {
   width: 100%;
-  margin-top:-5px;
-  height: 35px;
+  /*margin-top:-5px;*/
+  padding-top: 10px;
+  text-align: center;
+  height: 40px;
   background: #e36d00;
   background-position-x: initial;
   background-position-y: initial;
@@ -263,7 +265,7 @@ header.navbar {
   background-color: #f27490;
   /*background: url('images/stripe.png') repeat;*/
   color: #fff;
-  -webkit-transition: height 150ms;
+ /* -webkit-transition: height 150ms;*/
   overflow:hidden;
 }
 
@@ -363,6 +365,8 @@ p4 {
   padding-bottom: 25%;
   width: 25%;
   text-align: center;
+  min-height: 285px;
+  min-width: 285px;
 }
 
 .card__front,
