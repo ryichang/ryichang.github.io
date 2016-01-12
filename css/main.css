@@ -319,6 +319,7 @@ h1 {
   font-weight: bold;
   letter-spacing: -2px;
   max-width: 100px;
+
 }
 
 h3 {
@@ -367,6 +368,10 @@ p4 {
   text-align: center;
   min-height: 285px;
   min-width: 285px;
+  max-height: 200px;
+  max-width: 285px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .card__front,
