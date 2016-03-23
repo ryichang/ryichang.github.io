@@ -1,544 +1,65 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html> 
+<html>
+<!-- include head partial form ./views/_head.ejs --> 
+<!-- this has all of our style and client-side script tags --> 
+<% include ./header %> 
 
-<title> &#10094 ARCHIVE - Roy Chang &#10095 </title>
+<body> 
+	<div class="container">
+	  <input type="checkbox" id="chat-toggle">
 
-<!-- STYLESHEETS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Raleway+Dots' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="shortcut icon" type="images/ico" href="images/favicon.ico">
+		<div class="page-wrap">
+			<div class="page-content">
+					<div class="jumbotron">
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+					
+						<h1 class="article-title">RØY</h1>
+					
+					
+						<h1 class="article-title">CHANG</h1>
+					
+					
+						<h1 class="article-title">DEVELØPER</h1>
+					
+					</div>
+					<% include ./about %>
 
-  ga('create', 'UA-47887295-2', 'auto');
-  ga('send', 'pageview');
+					<div class="row">
+					<div class="col-md-4">
+					 <h3 class="article-title">EDUCATION<h3>
+					 <p>I attended University of California, Davis, obtained B.A. in Economics and Psychology. After completing my bachelors, I attended Santa Clara University for Certificate of Advanced Accounting Proficiency to be eligible for the CPA. I attended General Assembly's Web Development Immersive Program in September of 2015 and freshly graduated in December.
+					 </p>
+					</div>
+					<div class="col-md-4">
+					<h3 class="article-title">WORK EXPERIENCE</h3>
+						<p>  <b>Macias, Gini & O'Connell LLP:</b> Experienced Auditor
+						<br> <b>Central Computers:</b> Sales Associate
+					    <br> <b>Crate & Barrel, Euromarket Design Inc:</b> Sales Associate
+						<br> <b>Associated Students of UCD:</b> Lead Technical Assistant Director
+						<br> <b>San Mateo County Health Center:</b> Surgical Scheduling Specialist Assistant
+					</div>
 
-</script>
-
-  
-</head>
-<body>
-<nav>
-
-  <ul class="list-unstyled main-menu">
-
-    <!--Include your navigation here-->
-    <li class="text-right"><a href="#" id="nav-close">X</a></li>
-    <li><a href="#About">About<span class="icon"></span></a></li>
-    <li class="dropdown">
-	    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Portfolio<span class="caret"></span></a>
-	       <ul class="dropdown-menu" role="menu">
-	          <li class="project-menu"><a href="#Poloc">Poloc</a></li>
-	          <li class="project-menu"><a href="#HighFive">HighFive</a></li>
-	          <li class="project-menu"><a href="#Travel-Chatter">Travel-Chatter</a></li>
-	          <li class="project-menu"><a href="#Meteor">Meteor</a></li>
-	          <li class="project-menu"><a href="#PeckBox">PeckBox</a></li>
-	          <li class="project-menu"><a href="#Drake">Drake</a></li>
-            <li class="project-menu"><a href="#Etzy">Etzy</a></li>
-	        </ul>
-     </li>
-    <li><a href="#Contact">Contact<span class="icon"></span></a></li>
-    <li><a class="twitter-timeline" href="https://twitter.com/RxNeu" data-widget-id="683975481222250497">Tweets by @RxNeu</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-   
-  </ul>
-</nav>
-
-<div class="navbar navbar-fixed-top">      
-
-    <!--Include your brand here-->
-    <a class="navbar-brand" href="#">RC</a>
-    
-    <div class="navbar-header pull-right">
-      <a id="nav-expander" class="nav-expander fixed">
-        MENU &nbsp;<i class="fa fa-bars fa-lg white"></i>
-      </a>
-    </div>
-</div>
-  
-	
-<div class="splash">
-
-</div>	
-
-  <!-- <div class="banner" id="note">
-    <div class="banner-content-fluid">
-   
-  “THERE WILL COME A TIME WHEN YOU BELIEVE EVERYTHING IS FINISHED. THAT WILL BE THE BEGINNING.” — LOUIS L’AMOUR
-      <a href="#" id="close">
-        <svg width="20" height="20" style="display:inline-block;vertical-align:middle">
-          <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle>
-          <line fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-          <line fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-        </svg>
-      </a>
-     
-    </div>
-  </div> -->
-
- <main>
-  
-    <div class="container">
-	  <div class="section" id="About">
-      <div class="row-fluid">
-  	   <section>
-  	   <h2 class="section__title">Roy Chang&nbsp;
-  	    <a href="https://www.linkedin.com/in/yrchang" target="_blank"><i class="ion-social-linkedin icon"></i></a>
-      	<a href="https://github.com/ryichang" target="_blank"><i class="ion-social-github icon"></i></a>
-      	<a href="https://www.instagram.com/boytoy/" target="_blank"><i class="ion-social-instagram icon"></i></a>
-      	<a href="https://twitter.com/rxneu" target="_blank"><i class="ion-social-twitter icon"></i></a>
-      	</h2>
-  	   </section>
-      </div>
-      <br>
-
-	   <div class="section__content clearfix">
-
-          <div class="card effect__click">
-            <div class="card__front">
-             <div class="profile_picture">
-              <img class="img-profile" src="http://i.imgur.com/JWulXhz.jpg">
-             </div>
-              <h2 class="profile_text">&#10077 Hey, what's up? Hello. &#10078</h2>
-            </div>
-            <div class="card__back">
-            <span class="card__text">Greeting</span>
-            <p class="profile-back"><em>&#10077 Welcome to my developer archive, this site contains all past and concurrent projects since my journey as a web developer.&#10078</em></p>
-          
-            <img class="img-profile-back" src="http://i.imgur.com/FCTDyq6.jpg">  
-              
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click">
-            <div class="card__front">
-              <span class="card__text">About Me:</span>
-              <p class="about-me">I am a full-stack web developer located in Bay Area, CA. I enjoy the creative process behind building applications, especially implementing technologies to improve daily lives. I have built full-stack applications utilizing Ruby on Rails and MEAN stack. I love learning about the latest technologies and is actively searching to grow with a team of professional and passionate developers. 
-              </p>
-            </div>
-            <div class="card__back">
-              <span class="card__text">Education:</span>
-                <p class="about-me-back">I attended University of California, Davis, obtained B.A. in Economics and Psychology. After completing my bachelors, I attended Santa Clara University for Certificate of Advanced Accounting Proficiency to be eligible for the CPA. I attended General Assembly's Web Development Immersive Program in September of 2015 and <em>freshly</em> graduated in December.
-                </p>
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click">
-            <div class="card__front">
-              <span class="card__text">Skill Sets:</span>
-              <ul class="skill-set">
-              	<ul>Languages:<br><p2>HTML 5, CSS3, JavaScript, Ruby</p2></ul>
-              	<ul>Platforms & Frameworks:<br><p2>Node.js, Express, Rails, Angular JS</p2></ul>
-              	<ul>Database Tools:<br><p2>MongoDB, Mongoose.js, SQL, PostgreSQL, ActiveRecord</p2></ul>
-              	<ul>Other:<br><p2>Git/GitHub, Heroku, API's, AJAX, JSON, BCrypt, Photoshop, Illustrator</p2></ul>
-              </ul>
-            </div>
-            <div class="card__back">
-       		  <span class="card__text">Work Experiences:</span>
-              <ul class="skill-set">
-              	<ul>Macias, Gini & O'Connell LLP<br><p3><em>Experienced Audit Associate</em></p3></ul>
-                <ul>Central Computers<br><p3><em>Sales Associate</em></p3></ul>
-              	<ul>Crate & Barrel, Euromarket Designs Inc<br><p3><em>Sales Associate</em></p3></ul>
-              	<ul>Associated Students of UCD<br><p3><em>Lead Technical Assistant Director</em></p3></ul>
-              	<ul>San Mateo County Health Center<br><p3><em>Surgical Scheduling Specialist Assistant</em></p3></ul>
-              </ul>
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click">
-            <div class="card__front">
-              <section>
-            <h2 class="section__title"></h2>
-            </section>
-			        <time>TICK,<br>TOCK.</time>
-                <div class="list-follow">
-                  <li class="heart"></li>
-                </div>
-            </div>
-            <div class="card__back">
-              <!-- <span class="card__text">back</span> -->
-			  <div id="calendar">
-			  <div id="month"></div>
-				<div id="day"></div>
+					<% include ./social %>
+					</div>
+					<div class="row">
+						<div class="col-md-8">
+						<h3 class="article-title">PROJECTS<h3>
+						  
+						</div>
+						<div class="col-md-4">
+						<h3 class="article-title">TWITTER</h3>
+						<p> BLAH BLAH BLAH</p>
+						</div>
+					</div>
+					</div>
+				<% include ./chat-sidebar %>
 			</div>
-            </div>
-          </div><!-- /card -->
-          <br>
-	   </div>
-	  </div>
-	   <div class="text-center arrow">
-        <a href="#Portfolio" class="ion-android-arrow-dropdown js-scroll"></a>
-  	   </div>     
-      <div class="section">
-        <section>
-	   	 <h2 class="section__title" id="Portfolio">Portfolio</h2>
-	   	</section>
-        <div class="section__content clearfix">
-          <div class="card effect__click" id="Poloc">
-            <div class="card__front">
-            <section>
-            <h2 class="section__title">POLOC</h2>
-            </section>
-              <div class="add">
-               <p class="info_text">Polaroid Locator</p>
-              </div>
-              <p class="project-text">Poloc geolocates a current user, using the latitude and longitude parameter to search the Instagram API for nearby pictures. Furthermore, pictures are replotted back to the map so the user can pinpoint exactly where those pictures were taken. Poloc allows a user to save those pictures for later viewing and discovery. 
-              </p>
-            </div>
-            <div class="card__back">
-              <span class="card__text">Poloc</span>
-              <ul class="skill-set">
-                <ul>Technologies:<br><p3><em>Javascript, MongoDB, Mongoose, Express, Node, Google Maps API, Geolocation, Instagram API</em></p3></ul>
-                <ul>Responsibilities:<br><p3><em>This was an individual project, I developed the concept, wireframe, user narrative, coded the front-end and created the database on the back-end.</em></p3></ul>
-              </ul>
-              <div class="project-image">
-                  <span class="image__text">Poloc</span>
-                  <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                   <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                  </svg>
-                  </a>
-                    <img class="img-project" src="http://i.imgur.com/hbzxx70.png"><br>
-                    <a role="button" class="btn btn-default project-button" href="https://poloc.herokuapp.com/" target="_blank">Website</a>
-                    <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/poloc" target="_blank">Github</a>
-              </div>
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click" id="Travel-Chatter">
-            <div class="card__front">
-            <section>
-            <h2 class="section__title">TC</h2>
-            </section>
-                <div class="add">
-                 <p class="info_text">Travel-Chatter</p>
-                </div>
-                <p class="project-text">Travel Chatter is a blog for cities. A user is able to create an account, create a city, and leave posts. A user can also search for existing cities, leave a post, and browse other user posts in each city respectively. 
-                </p>
-            </div>
-            <div class="card__back">
-              <span class="card__text">Travel Chatter</span>
-              <ul class="skill-set">
-                <ul>Technologies:<br><p3><em>Ruby, Ruby on Rails, PostgreSQL, Google Maps API</em></p3></ul>
-                <ul>Responsibilities:<br><p3><em>This was a group project, my main focus was on the back-end development, setting up routes and models for users, posts and cities.</em></p3></ul>
-              </ul>
-                <div class="project-image">
-                  <span class="image__text">Travel Chatter</span>
-                   <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                   <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                  </svg>
-                  </a>
-                  <img class="img-project" src="http://i.imgur.com/wG4zSKn.png"><br>
-                  <a role="button" class="btn btn-default project-button" href="http://travel-chatter.herokuapp.com/" target="_blank">Website</a>
-                  <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/Vagabond-" target="_blank">Github</a>
-                </div>
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click" id="HighFive">
-            <div class="card__front">
-             <section>
-             <h2 class="section__title">HIGHFIVE</h2>
-             </section>
-              <div class="add">
-               <p class="info_text">Compliment</p>
-              </div>
-              <p class="project-text">HighFive enables a user to create a profile, upload profile pictures using Amazon Cloud Services, view map displaying all nearby users and compliment other users in the form of emojis. A user is able to check his / her profile to see all compliments received. 
-              </p>
-            </div>
-            <div class="card__back">
-              <span class="card__text">HighFive</span>
-              <ul class="skill-set">
-                <ul>Technologies:<br><p3><em>Ruby, Rails, JavaScript, PostgreSQL, Google Maps API, Amazon S3</em></p3></ul>
-                <ul>Responsibilities:<br><p3><em>This was a group project, I helped with the back-end development and worked extensively on the map functionality, which included using Google Maps, AJAX to store the location, and Gon Gem to extract out user locations.</em></p3></ul>
-              </ul>
-              <div class="project-image">
-                    <span class="image__text">HighFive</span>
-                    <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                   <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                    </svg>
-                    </a>
-                    <img class="img-project" src="http://i.imgur.com/klYFe8d.png"><br>
-                    <a role="button" class="btn btn-default project-button" href="http://high-five-app.herokuapp.com/" target="_blank">Website</a>
-                    <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/HighFive" target="_blank">Github</a>
-              </div>
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click" id="Meteor">
-            <div class="card__front">
-            <section>
-            <h2 class="section__title">METEOR</h2>
-            </section>
-             <div class="add">
-               <p class="info_text">To-Do List</p>
-              </div>
-              <p class="project-text">Meteor is a to-do list that allows a user to add items, check items, and remove items from a list with some simple css styling using the Meteor framework and Angular JS. 
-              </p>
-            </div>
-            <div class="card__back">
-               <span class="card__text">Meteor</span>
-                <ul class="skill-set">
-                  <ul>Technologies:<br><p3><em>Javascript, Angular JS, Meteor, Mongoose, MongoDB</em></p3></ul>
-                  <ul>Responsibilities:<br><p3><em>This was an individual project, I set up front-end using Angualr and the back-end database using the native Meteor default MongoDB. The styling was done very minimally using CSS.</em></p3></ul>
-                </ul>
-               <div class="project-image">
-                  <span class="image__text">Meteor</span>
-                  <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                   <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                    </svg>
-                  </a>
-                  <img class="img-project" src="http://i.imgur.com/a2JUj0p.png"><br>
-                  <a role="button" class="btn btn-default project-button" href="http://mememeteorapp.meteor.com/" target="_blank">Website</a>
-                  <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/MeteorToDoList" target="_blank">Github</a>
-              </div>
-            </div>
-          </div>
-        </div><!-- /card -->
-        <!-- <br> -->
-           <div class="card effect__click" id="PeckBox">
-            <div class="card__front">
-            <section>
-            <h2 class="section__title">PECKBOX</h2>
-            </section>
-                <div class="add">
-                  <p class="info_text">Event Organizer</p>
-                </div>
-                <p class="project-text">PeckBox is an event organizer app. PeckBox enables a user to view all events created & RSVP in a grid-like chronological format. RSVP users will be able to leave status messages. Peckbox allows a user to view each RSVP event with the knowledge of each status of every other user. 
-                </p>
-            </div>
-            <div class="card__back">
-              <span class="card__text">PeckBox</span>
-                <ul class="skill-set">
-                  <ul>Technologies:<br><p3><em>Javascript, Angular JS, Mongoose, MongoDB, Express, Google Place API</em></p3></ul>
-                  <ul>Responsibilities:<br><p3><em>This was an individual project, I developed everything from the inception, wireframe, user narrative, coded the front-end and created the database on the back-end.</em></p3></ul>
-                </ul>
-              <div class="project-image">
-                  <span class="image__text">PeckBox</span>
-                  <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                   <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                    </svg>
-                  </a>
-                  <img class="img-project" src="http://i.imgur.com/F3bRftP.png"><br>
-                  <a role="button" class="btn btn-default project-button" href="https://peck-box.herokuapp.com" target="_blank">Website</a>
-                  <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/BE-" target="_blank">Github</a>
-              </div>
-          </div>
-        </div><!-- /card -->
-         <div class="card effect__click" id="Drake">
-            <div class="card__front">
-            <section>
-              <h2 class="section__title">DRAKE</h2>
-            </section>
-                <p class="project-text">Drake Feels is a strictly fun application, each click cycles through one of his dance moves in the music video "Hotline Bling" accompanied with background color change and lyrics. 
-                </p>
-                  <div class="add">
-                   <p class="info_text_bottom">FEELS &#9996</p>
-                  </div>
-            </div>
-            <div class="card__back">
-              <span class="card__text">Drake Feels</span>
-                <ul class="skill-set">
-                  <ul>Technologies:<br><p3><em>Javascript, HTML, CSS</em></p3></ul>
-                  <ul>Responsibilities:<br><p3><em>This is an individual project concept, just a fun application to entertain with a simple on click functionality. The website is hosted using Heroku with PHP for static site.</em></p3></ul>
-                </ul>
-                  <div class="project-image">
-              <!-- <div class="project-description"> -->
-                  <span class="image__text">Drake</span>
-                  <!-- <span class="card__text">Drake</span> -->
-                  <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                   <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                    </svg>
-                  </a>
-                  <!-- <a href="#Portfolio" id="close">
-                    <svg width="20" height="20" style="display:inline-block;vertical-align:middle">
-                    <circle fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                    <line fill="none" stroke="#FFFFFF" stroke-width="1.4" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                  </svg>
-                  </a><br> -->
-                  <img class="img-project" src="http://i.imgur.com/WgeCaSp.png"><br>
-                  <a role="button" class="btn btn-default project-button" href="https://drakefeels.herokuapp.com" target="_blank">Website</a>
-                  <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/DrakeFeels" target="_blank">Github</a>
-              </div>
-            </div>
-          </div><!-- /card --> 
-          <div class="card effect__click" id="Etzy">
-              <div class="card__front">
-              <section>
-              <h2 class="section__title">ETZY</h2>
-              </section>
-                  <div class="add">
-                    <p class="info_text">Clone</p>
-                  </div>
-                  <p class="project-text">Etzy Clone is a mobile application that enables users to take pictures with their camera or select a picture from their library, add tagline, and declare a price similar to Etsy. The application allows users to post their own products and view all products posted. 
-                  </p>
-              </div>
-              <div class="card__back">
-                <span class="card__text">Etzy</span>
-                  <ul class="skill-set">
-                    <ul>Technologies:<br><p3><em>Ionic, Javascript, Angular JS, Firebase, Cordova, Gravatar</em></p3></ul>
-                    <ul>Responsibilities:<br><p3><em>This was an individual project, the front-end was developed using the Ionic framework with angular controllers and Cordova camera. The back-end was setup using Firebase with datastorage and user authentication. </em></p3></ul>
-                  </ul>
-                <div class="project-image">
-                    <span class="image__text">Etzy</span>
-                    <a href="#Portfolio" id="close">
-                      <svg width="20" height="20" style="display:inline-block;vertical-align:middle;float:right;">
-                     <!--  <circle fill="none" stroke="#000000" stroke-width="1.2" stroke-miterlimit="10" cx="8.7" cy="8.7" r="8"></circle> -->
-                      <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="6.129" y1="5.869" x2="11.458" y2="11.198"></line>
-                      <line fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-miterlimit="10" x1="11.458" y1="5.869" x2="6.129" y2="11.198"></line>
-                      </svg>
-                    </a>
-                    <img class="img-project" src="http://i.imgur.com/OeKNewF.png"><br>
-                    <a role="button" class="btn btn-default project-button" href="#Portfolio">Ionic ID: 5DB590DC</a>
-                    <a role="button" class="btn btn-default project-button" href="https://github.com/ryichang/Etzy" target="_blank">Github</a>
-                </div>
-            </div>
-          </div><!-- /card -->
-        
-           <div class="text-center arrow">
-        		<a href="#Contact" class="ion-android-arrow-dropdown js-scroll"></a>
-  	   	   </div>
-
-
-        </div>
-
-      </div><!-- /section -->  
-      <div class="container">
-      <div class="section" id="Contact">
-	   <section>
-	   <h2 class="section__title">Contact</h2>
-	   </section>
-	   <div class="section__content clearfix">
-          <div class="card effect__click">
-            <div class="card__front">
-              
-              <span class="card__text">Questions?</span>
-              <p class="contact-text">If you&#8217;d like further information about me, discussion regarding employment opportunities or have any inquiries please call during 11am-5pm (PST) or email me anytime.</p>
-              <h6>Email</h6>
-              <p class="contact-text"><a href="mailto:ryichang@gmail.com">ryichang@gmail.com</a></p>
-              <h6>Phone</h6>
-              <p class="contact-text"><a href="tel:+16508049439">1.650.804.9439</a></p>
-            </div>
-            <div class="card__back">
-              <span class="card__text"></span>
-			        <p class="contact-text">Follow Me:</p>
-              <a href="https://www.linkedin.com/in/yrchang" target="_blank"><i class="ion-social-linkedin icon-bottom"></i></a>
-    		      <a href="https://github.com/ryichang" target="_blank"><i class="ion-social-github icon-bottom"></i></a>
-    	        <a href="https://www.instagram.com/boytoy/" target="_blank"><i class="ion-social-instagram icon-bottom"></i></a>
-    	        <a href="https://twitter.com/rxneu" target="_blank"><i class="ion-social-twitter icon-bottom"></i></a><br>
-              <p class="contact-text">Share this page:</p>
-               <div class="box">
-                <a rel="nofollow" data-text="Archive - Roy Chang" data-url="http://yhrchang-archive.com" href="#" class="share twitter-share-button" title="Tweet This!" style="margin-top:33px;">Tweet</a>
-                </div>
-            </div>
-          </div><!-- /card -->
-			<div class="card">
-            <div class="card__front">
-            <span class="card__text"></span>
-              <!-- <form action="MAILTO:ryichang@gmail.com" method="post" enctype="text/plain"> -->
-				<p class="about-me">Leave me a comment:</p>
-				<!-- <input type="textarea" name="Name" placeholder="name" title="" required="true" size="40"><br><br>
-				<input type="textarea" name="Comment" placeholder="comment" title="" required="true" size="40"><br><br> -->
-				<!-- <input type="hidden" name="Thanks for leaving a comment!"><br><br> -->
-				<!-- <input type="submit" class="btn btn-default" value="send"> -->
-				<!-- <input type="reset" class="btn btn-default" value="Reset"> -->
-				<!-- </form> -->
-            <form id="contactform" method="POST">
-                <input type="text" name="name" placeholder="Name" size="30" required="true">
-                <br>
-                <input type="email" name="_replyto" placeholder="Email" size="30" required="true">
-                <br>
-                <input type="hidden" name="_subject" value="Website contact" />
-                <textarea name="message" placeholder="Comment" style="height: 100px; width: 219px;" required="true"></textarea>
-                <br>
-                <input type="text" name="_gotcha" style="display:none" />
-                <input type="hidden" name="_next" value="https://ryichang.github.io" />
-                <input type="submit" class="btn btn-default" value="Send">
-            </form>
-            <script>
-                var contactform =  document.getElementById('contactform');
-                contactform.setAttribute('action', '//formspree.io/' + 'ryichang' + '@' + 'gmail' + '.' + 'com');
-            </script>
-            </div>
-            <div class="card__back">
-			  
-            </div>
-          </div><!-- /card -->
-
-
-        </div>  
-    </div>
-		
-  
-
-</div>
-</div></div>
-
-
-
-  </main><!-- /main -->
-  	
-</div><!-- /#wrapper -->
-
- 
-
-<footer class='bottom'>
- <div class="text-center arrow">
-   <a href="#" class="ion-android-arrow-dropup js-scroll"></a>
- </div>
-  </div>
-   <p class="footer">Made with <span class='heart'>♥︎</span> by Roy Chang <!-- | © MMXVI  | All Rights Reserved --></p>	
-</footer>
+		</div>
+	</div>
+	<% include ./nav %>
+	
 
 </body>
 
-
-<!-- APPLICATION SCRIPTS -->
-<script src="js/scripts.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
- <script>
-    $(document).ready(function(){												
-       
-       //Navigation Menu Slider
-        $('#nav-expander').on('click',function(e){
-      		e.preventDefault();
-      		$('body').toggleClass('nav-expanded');
-      	});
-      	$('#nav-close').on('click',function(e){
-      		e.preventDefault();
-      		$('body').removeClass('nav-expanded');
-      	});
-	
-      });
-
-
- </script>
-
-
-</html>
+<% include ./footer %>
+</html> 
