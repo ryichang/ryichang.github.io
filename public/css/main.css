@@ -271,47 +271,47 @@ li {
   transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .blocks__block:nth-child(1) {
-  background: rgba(236,187,173,1);
+  background: rgba(236,187,173,0.9);
   -webkit-transform-origin: 0% 100%;
           transform-origin: 0% 100%;
 }
 .blocks__block:nth-child(2) {
-  background: rgba(255,226,196,1);
+  background: rgba(255,226,196,0.9);
   -webkit-transform-origin: 13% 100%;
           transform-origin: 13% 100%;
 }
 .blocks__block:nth-child(3) {
-  background: rgba(250,215,123,1);
+  background: rgba(250,215,123,0.9);
   -webkit-transform-origin: 25% 100%;
           transform-origin: 25% 100%;
 }
 .blocks__block:nth-child(4) {
-  background: rgba(253,100,103,1); 
+  background: rgba(253,100,103,0.9); 
   -webkit-transform-origin: 37.5% 100%;
           transform-origin: 37.5% 100%;
 }
 .blocks__block:nth-child(5) {
-  background:  rgba(169,216,200,1);
+  background:  rgba(169,216,200,0.9);
   -webkit-transform-origin: 50% 100%;
           transform-origin: 50% 100%;
 }
 .blocks__block:nth-child(6) {
-  background:  rgba(121,136,129,1);
+  background:  rgba(121,136,129,0.9);
   -webkit-transform-origin: 62.5% 100%;
           transform-origin: 62.5% 100%;
 }
 .blocks__block:nth-child(7) {
-  background:  rgba(199,177,156,1);
+  background:  rgba(199,177,156,0.9);
   -webkit-transform-origin: 75% 100%;
           transform-origin: 75% 100%;
 }
 .blocks__block:nth-child(8) {
-  background:  rgba(206,186,198,1);
+  background:  rgba(206,186,198,0.9);
   -webkit-transform-origin: 87.5% 100%;
           transform-origin: 87.5% 100%;
 }
 .blocks__block:nth-child(9) {
-  background:  rgba(226,222,219,1);
+  background:  rgba(226,222,219,0.9);
   -webkit-transform-origin: 100% 100%;
           transform-origin: 100% 100%;
 }
