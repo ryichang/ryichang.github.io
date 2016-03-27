@@ -73,7 +73,7 @@ $(function () {
     var menuOn = false;
     $(window).on('scroll', function() {
         var scrollTop = $(this).scrollTop();    
-        if ( scrollTop > 5 && down === false) {
+        if ( scrollTop > 0 && down === false) {
             $('#header').animate({"top":  -200}, 300 );
             down = true;
         } 
