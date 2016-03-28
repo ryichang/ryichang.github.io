@@ -79,7 +79,7 @@ z-index: -10;}
 
 
 time {
-  float: right;
+  float: left;
   font-weight: 700;
   font-size: 12px;
   padding-left: 5px;
@@ -88,7 +88,7 @@ time {
 }
 
 .hoverlink{
-  float: right;
+  float: left;
   color: rgba(255,255,255,1) !important;
   text-decoration:none !important;
   display: inline-block;
@@ -96,7 +96,7 @@ time {
 }
 
 .hoverlinkicons{
-  float: right;
+  float: left;
   color: rgba(255,255,255,1) !important;
   text-decoration:none !important;
   display: inline-block;
