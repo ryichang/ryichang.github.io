@@ -386,6 +386,7 @@ li {
   top: 2vh;
   font-size: 30px;
   cursor: pointer;
+  color: #000;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -400,10 +401,12 @@ li {
 }
 .blocks-content h2 {
   padding: 15px 30px;
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 6px;
+  color: #000;
+  font-family:Arial, Helvetica, sans-serif; 
  /* word-wrap:break-word;*/
-  box-shadow: inset 0 0 0 3px #000;
+/*  box-shadow: inset 0 0 0 3px #000;*/
 }
 .blocks-names {
   position: fixed;
@@ -638,7 +641,7 @@ textarea:hover {
   padding: 15px 30px;
   font-weight: 300;
   letter-spacing: 6px;
-  box-shadow: inset 0 0 0 3px #000;
+ /* box-shadow: inset 0 0 0 3px #000;*/
 }
 
 .hoversite{
