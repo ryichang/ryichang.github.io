@@ -386,7 +386,7 @@ li {
   top: 2vh;
   font-size: 30px;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
@@ -645,7 +645,7 @@ textarea:hover {
 }
 
 .hoversite{
-  color: rgba(0,0,0,1) !important;
+  color: rgba(255,255,255,1) !important;
   text-decoration:none !important;
   display: inline-block;
   text-decoration: none;
