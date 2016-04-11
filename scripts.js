@@ -68,21 +68,21 @@ var lastCard = $(".card-list .card").length - 1;
 
 
 //nav on scroll 
-$(function () { 
-    var down = false;
-    var menuOn = false;
-    $(window).on('scroll', function() {
-        var scrollTop = $(this).scrollTop();    
-        if ( scrollTop > 0 && down === false) {
-            $('#header').animate({"top":  -200}, 300 );
-            down = true;
-        } 
-        if ( scrollTop < 10 && down === true) {
-            $('#header').animate({"top": 0}, 300 );
-            down = false;
-        }
-    });            
-});
+// $(function () { 
+//     var down = false;
+//     var menuOn = false;
+//     $(window).on('scroll', function() {
+//         var scrollTop = $(this).scrollTop();    
+//         if ( scrollTop > 0 && down === false) {
+//             $('#header').animate({"top":  -200}, 300 );
+//             down = true;
+//         } 
+//         if ( scrollTop < 10 && down === true) {
+//             $('#header').animate({"top": 0}, 300 );
+//             down = false;
+//         }
+//     });            
+// });
 
 
 
