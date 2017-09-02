@@ -59,15 +59,22 @@
   <script type="text/javascript" src="../public/js/lib/jquery.easing.1.3.js"></script>
   <!-- O.G. Analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  (function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  (i[r] =
+    i[r] ||
+    function() {
+      (i[r].q = i[r].q || []).push(arguments);
+    }), (i[r].l = 1 * new Date());
+  (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m);
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-47887295-2', 'auto');
-    ga('send', 'pageview');
-
-  </script>
+ga('create', 'UA-47887295-2', 'auto');
+ga('send', 'pageview');
+</script>
 
 
 <header id="page-header">
@@ -164,7 +171,9 @@
       </li>
       <li class="blocks-content__content">
         <h2>WORK</h2>
-          <p> <b>Symantec: </b>Authentication Analyst
+          <p>
+          <b> ProUnlimited @ Facebook </b> Instagram PDI Contractor 
+          <br> <b>Symantec: </b>Authentication Analyst
           <br> <b>Unfetter:</b> Intern Developer
           <br>  <b>Macias, Gini & O'Connell LLP:</b> Experienced Auditor
         	<br> <b>Central Computers:</b> Sales Associate
@@ -298,9 +307,12 @@
 
 		</form>
         <script>
-            var contactform =  document.getElementById('form');
-            contactform.setAttribute('action', '//formspree.io/' + 'ryichang' + '@' + 'gmail' + '.' + 'com');
-        </script>
+        var contactform = document.getElementById('form');
+contactform.setAttribute(
+  'action',
+  '//formspree.io/' + 'ryichang' + '@' + 'gmail' + '.' + 'com'
+);
+</script>
 
         <i class="blocks__content-close fa fa-close"></i>
       </li>
