@@ -1,3 +1,8 @@
+*::selection {
+  background-color: rgba(0, 240, 180, 0.5);
+  color: #fff;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -20,7 +25,7 @@ h1 {
   font-size: 34px;
   letter-spacing: 0.2em;
   weight: 700;
-  position: rleative-inline;
+  position: relative-inline;
 }
 
 .jumbotron {
@@ -205,6 +210,7 @@ canvas {
   position: absolute;
   width: 100% !important;
   height: 100% !important;
+  /*z-index: 1;*/
   z-index: -1;
 }
 
@@ -487,7 +493,7 @@ li {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .blocks-names .blocks__name:hover {
@@ -616,7 +622,7 @@ input {
   padding: 0px 15px 0px 15px;
   background: transparent;
   outline: none;
-  color: #454545;
+  color: #fff;
   border: solid 1px #000;
   border-bottom: none;
   transition: all 0.3s ease-in-out;
@@ -638,7 +644,7 @@ textarea {
   padding: 15px;
   background: transparent;
   outline: none;
-  color: #454545;
+  color: #fff;
   font-family: "Lato", sans-serif;
   font-size: 0.875em;
   border: solid 1px #000;
